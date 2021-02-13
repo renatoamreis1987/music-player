@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="player-container">
+      <!-- Song -->
+      <div class="img-container">
+        <img src="img/jacinto-1.jpg" alt="Album Art" />
+      </div>
+      <h2 id="title">Electric Chill Machine</h2>
+      <h3 id="artist">Jacinto</h3>
+      <audio
+        src="https://d1dwvcwq657ipv.cloudfront.net/episodes/original/31508188?episode_id=42793056&show_id=2746046&user_id=10210424&tenant=SPREAKER&timestamp=1613073458&media_type=static&response-content-disposition=attachment%3Bfilename%3D%22kill_mr_dj_billie_jean_got_me_in_love_again_dua_lipa_vs_chris_cornell.mp3%22&Expires=1613764658&Signature=qjWFktzJCCGpw0uv6624PGRSCwwksHd7LaYEiVoViejMg5Iqc4iwhZUukFQ97%7Em%7EYiL56OvSjU%7EmjHkGEeMr5JxGPtDECDSGWAXiULHV0atItgCu1Yem1wUkwgns479cgZjZ2jZrGSL2%7EADn5A1XFZDXxYolExEpKVB9RDrzGcwx7MnIZgQSWXVrajul9vhS47XAt8%7EMCAVugw6i2D%7ELtIl8xMoxIR4OkmsejhUZdI7ykO4bctLuZMD-KDrut0O6pUUrliz1kN59DsC7lyuIbzXWxyV5paEfLt5HLnRBzKSKy6aYlgowlt2yFdacLxQbG258PLQhT3JIDZ15vERyXg__&Key-Pair-Id=APKAINDIVJ7TLFUAJI3A"
+      ></audio>
+      <div class="progress-container" id="progress-container">
+        <div class="progress" id="progress"></div>
+        <div class="duration-wrapper">
+          <span id="current-time">0:00</span>
+          <span id="duration">3:41</span>
+        </div>
+      </div>
+      <div class="player-controls">
+          <i class="fas fa-backward" id="prev" title="Previous"></i>
+          <i class="fas fa-play main-button" id="play" title="play"></i>
+          <i class="fas fa-forward" id="next" title="Next"></i>
+
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
